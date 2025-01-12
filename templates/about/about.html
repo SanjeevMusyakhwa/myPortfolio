@@ -1,0 +1,30 @@
+{% load static %}
+<!-- About Section  -->
+ <section id="about" class="about">
+  <div class="img-about scroll-scale">
+    <img src="{{ about_objs.image.url }}" alt="">
+    <div class="info-about1">
+      <span>{{ about_objs.experience_year }}+</span>
+      <p>Years of Experience</p>
+    </div>
+    <div class="info-about2">
+      <span>{{ about_objs.projects_completed }}+</span>
+      <p>Projects Completed</p>
+    </div>
+    <div class="info-about3">
+      <span>{{ about_objs.happy_clients }}+</span>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+    <div class="about-content scroll-scale">
+      <span>Let me introduce myself</span>
+      <h2>About Me</h2>
+      <h3>{{ about_objs.title}}</h3>
+      <p>{{ about_objs.description }}</p>
+      <div class="btn-box">
+        <a href="" class="btn">Read More!</a>
+    </div>
+
+  </div>
+ </section>
+<!-- End About Section  -->

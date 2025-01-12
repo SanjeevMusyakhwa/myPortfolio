@@ -1,0 +1,22 @@
+{% load static %}
+<section id="portfolio" class="portfolio">
+  <div class="main-text scroll-scale">
+    <span>What i will do for you!</span>
+    <h2>Latest Projects</h2>
+  </div>
+    <div class="portfolio-gallery scroll-bottom">
+      {% for portfolio in portfolio_objs %}
+      <div class="port-box mix products">
+        <div class="port-image">
+          <img src="{{ portfolio.image.url }}" alt="">
+        </div>
+        <div class="port-content">
+          <h3>{{ portfolio.title }}</h3>
+          <p>{{ portfolio.short_description }}</p>
+          <a href="{{ portfolio.link }}"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

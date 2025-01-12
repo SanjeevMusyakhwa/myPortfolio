@@ -1,0 +1,22 @@
+<section id="skills" class="skills">
+  <div class="main-text scroll-scale">
+    <span>Technical and Professional</span>
+    <h2>My Skills</h2>
+  </div>
+  <div class="skill-main scroll-scale">
+    <div class="skill-left">
+      <h3>Technical Skills</h3>
+      {% for skill_data in skills.skilldata %}
+      <div class="skill-bar">
+        <div class="info">
+          <p>{{ skill_data.language }}</p>
+          <p>{{ skill_data.knowledge }} %</p>
+        </div>
+        <div class="bar">
+          <span style="width: {{ skill_data.knowledge }}%;" class="html"></span>        
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

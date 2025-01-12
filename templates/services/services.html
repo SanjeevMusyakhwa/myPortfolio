@@ -1,0 +1,18 @@
+<section id="services" class="services">
+  <div class="main-text scroll-scale">
+    <span>What i will do for you!</span>
+    <h2>Our Services</h2>
+  </div>
+
+  <div class="section-services scroll-bottom">
+    {% for service in service_objs %}
+      
+    
+    <div class="service-box">
+      <i class="service-icon {{ service.icon_class }}"></i>
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
