@@ -33,7 +33,7 @@ class HomeView(TemplateView):
     return skills
   
   def get_portfolio_obj(self,*args, **kwargs):
-    portfolio_obj = Protfolio.objects.all()
+    portfolio_obj = Protfolio.objects.all().order_by('-created_at')
     return portfolio_obj
   
   

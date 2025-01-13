@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-ci0cp%*pbci+lpe+=^c686!l2)fzu4d$m8k7-w*$1i%$(!+3@w
 DEBUG = True
 
 ALLOWED_HOSTS = ['myportfolio-r6qk.onrender.com', 'sanjeevmusyakhwo.com.np']
+# 'myportfolio-r6qk.onrender.com', 'sanjeevmusyakhwo.com.np'
 
 
 # Application definition

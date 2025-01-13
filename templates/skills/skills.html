@@ -7,13 +7,13 @@
     <div class="skill-left">
       <h3>Technical Skills</h3>
       {% for skill_data in skills.skilldata %}
-      <div class="skill-bar">
+      <div class="skill-bar scroll-scale">
         <div class="info">
           <p>{{ skill_data.language }}</p>
           <p>{{ skill_data.knowledge }} %</p>
         </div>
         <div class="bar">
-          <span style="width: {{ skill_data.knowledge }}%;" class="html"></span>        
+          <span style="width: {{ skill_data.knowledge }}%;" class="html"></span>
         </div>
       </div>
       {% endfor %}
